@@ -1,3 +1,4 @@
+
 # WorkoutLogger App
 
 Welcome to the WorkoutLogger app! This project is built on Salesforce technology and offers both web and mobile interfaces to help users track their fitness progress efficiently. With the WorkoutLogger app, users can log workouts, monitor progress over time, and stay motivated to achieve their fitness goals.
@@ -43,10 +44,28 @@ Since the WorkoutLogger app is built on Salesforce, follow these steps to set up
    - Set up Process Builder to automate workout logging processes and notifications.
 
 ## Screenshots
+
 Here are some screenshots of the app in action:
 
-- **Web and Mobile App**:  
-  ![App Interface](path/to/webapp-screenshot.png)
+- **Apex Screenshot**:  
+  ![Apex Screenshot](Apex-Screenshot1.png)
+
+- **Lightning Component Screenshots**:  
+  ![Lightning Component Screenshot1](LightningComponent-Screenshot1.png)  
+  ![Lightning Component Screenshot2](LightningComponent-Screenshot2.png)  
+  ![Lightning Component Screenshot3](LightningComponent-Screenshot3.png)  
+  ![Lightning Component Screenshot4](LightningComponent-Screenshot4.png)
+
+- **Mobile Screenshots**:  
+  ![Mobile Screenshot1](Mobile-Screenshot1.png)  
+  ![Mobile Screenshot2](Mobile-Screenshot2.png)  
+  ![Mobile Screenshot3](Mobile-Screenshot3.png)
+
+- **Web Screenshots**:  
+  ![Web Screenshot1](Web-Screenshot1.png)  
+  ![Web Screenshot2](Web-Screenshot2.png)  
+  ![Web Screenshot3](Web-Screenshot3.png)  
+  ![Web Screenshot4](Web-Screenshot4.png)
 
 ## Contributing
 We welcome contributions! If you'd like to contribute, feel free to submit issues or pull requests for improvements.
