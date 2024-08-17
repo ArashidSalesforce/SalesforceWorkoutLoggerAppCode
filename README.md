@@ -7,7 +7,7 @@ Welcome to the WorkoutLogger app! This project is built on Salesforce technology
 
 ### Core Features
 - **Aura Components:** The app leverages Salesforce's Aura Components to create dynamic and responsive user interfaces.
-- **Process Automation:** WorkoutLogger uses Process Builder for automated workflow actions, ensuring seamless data management.
+- **Process Automation:** WorkoutLogger uses Flows for automated workflow actions, ensuring seamless data management.
 - **Apex Controllers:** Custom Apex code manages the business logic, providing robust backend operations.
 - **Custom Objects:** Workouts and progress are stored in Salesforce as custom objects, allowing for a flexible and scalable data structure.
 - **Master-Detail Relationships:** Relationships between objects are established using master-detail fields for easy roll-up summary calculations.
@@ -17,7 +17,7 @@ Welcome to the WorkoutLogger app! This project is built on Salesforce technology
 - **Frontend:** Aura Components
 - **Backend:** Apex (custom logic)
 - **Database:** Salesforce Custom Objects
-- **Automation:** Salesforce Process Builder
+- **Automation:** Salesforce Flows
 - **Deployment:** Salesforce Experience Cloud for web and mobile access
 
 ## Installation
@@ -30,9 +30,6 @@ Since the WorkoutLogger app is built on Salesforce, follow these steps to set up
 
 ### Installation Steps
 1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/your-username/workoutlogger.git
-   ```
 2. **Deploy to Salesforce:**
    - Use Salesforce CLI or your preferred deployment tool (e.g., Change Sets, Unlocked Packages).
    - Ensure that all custom objects, fields, and relationships are properly configured.
@@ -40,8 +37,8 @@ Since the WorkoutLogger app is built on Salesforce, follow these steps to set up
 3. **Set Up Experience Cloud:**
    - Create a new Experience Site and configure it to use the deployed Aura components.
    - Customize the site for your branding needs and activate it for your users.
-4. **Configure Process Builder:**
-   - Set up Process Builder to automate workout logging processes and notifications.
+4. **Configure Flows:**
+   - Set up Flows to automate workout logging processes and notifications.
 
 ## Screenshots
 
@@ -51,21 +48,21 @@ Here are some screenshots of the app in action:
   ![Apex Screenshot](SalesforceWorkoutLoggerApp/Apex-Screenshot1.png)
 
 - **Lightning Component Screenshots**:  
-  ![Lightning Component Screenshot1](LightningComponent-Screenshot1.png)  
-  ![Lightning Component Screenshot2](LightningComponent-Screenshot2.png)  
-  ![Lightning Component Screenshot3](LightningComponent-Screenshot3.png)  
-  ![Lightning Component Screenshot4](LightningComponent-Screenshot4.png)
+  ![Lightning Component Screenshot1](SalesforceWorkoutLoggerApp/LightningComponent-Screenshot1.png)  
+  ![Lightning Component Screenshot2](SalesforceWorkoutLoggerApp/LightningComponent-Screenshot2.png)  
+  ![Lightning Component Screenshot3](SalesforceWorkoutLoggerApp/LightningComponent-Screenshot3.png)  
+  ![Lightning Component Screenshot4](SalesforceWorkoutLoggerApp/LightningComponent-Screenshot4.png)
 
 - **Mobile Screenshots**:  
-  ![Mobile Screenshot1](Mobile-Screenshot1.png)  
-  ![Mobile Screenshot2](Mobile-Screenshot2.png)  
-  ![Mobile Screenshot3](Mobile-Screenshot3.png)
+  ![Mobile Screenshot1](SalesforceWorkoutLoggerApp/Mobile-Screenshot1.png)  
+  ![Mobile Screenshot2](SalesforceWorkoutLoggerApp/Mobile-Screenshot2.png)  
+  ![Mobile Screenshot3](SalesforceWorkoutLoggerApp/Mobile-Screenshot3.png)
 
 - **Web Screenshots**:  
-  ![Web Screenshot1](Web-Screenshot1.png)  
-  ![Web Screenshot2](Web-Screenshot2.png)  
-  ![Web Screenshot3](Web-Screenshot3.png)  
-  ![Web Screenshot4](Web-Screenshot4.png)
+  ![Web Screenshot1](SalesforceWorkoutLoggerApp/Web-Screenshot1.png)  
+  ![Web Screenshot2](SalesforceWorkoutLoggerApp/Web-Screenshot2.png)  
+  ![Web Screenshot3](SalesforceWorkoutLoggerApp/Web-Screenshot3.png)  
+  ![Web Screenshot4](SalesforceWorkoutLoggerApp/Web-Screenshot4.png)
 
 ## Contributing
 We welcome contributions! If you'd like to contribute, feel free to submit issues or pull requests for improvements.
