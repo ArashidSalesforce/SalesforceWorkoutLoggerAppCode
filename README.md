@@ -48,7 +48,7 @@ Since the WorkoutLogger app is built on Salesforce, follow these steps to set up
 Here are some screenshots of the app in action:
 
 - **Apex Screenshot**:  
-  ![Apex Screenshot](Apex-Screenshot1.png)
+  ![Apex Screenshot](SalesforceWorkoutLoggerApp/Apex-Screenshot1.png)
 
 - **Lightning Component Screenshots**:  
   ![Lightning Component Screenshot1](LightningComponent-Screenshot1.png)  
