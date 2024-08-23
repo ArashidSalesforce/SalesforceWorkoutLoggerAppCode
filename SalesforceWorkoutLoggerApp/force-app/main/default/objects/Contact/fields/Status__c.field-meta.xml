@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Progressing</fullName>
+                <default>false</default>
+                <label>Progressing</label>
+            </value>
+            <value>
+                <fullName>Not Progressing</fullName>
+                <default>false</default>
+                <label>Not Progressing</label>
+            </value>
+            <value>
+                <fullName>Progressing and Send Congrats Email</fullName>
+                <default>false</default>
+                <label>Progressing and Send Congrats Email</label>
+            </value>
+            <value>
+                <fullName>Not Progressing and Send Motivational Email</fullName>
+                <default>false</default>
+                <label>Not Progressing and Send Motivational Email</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

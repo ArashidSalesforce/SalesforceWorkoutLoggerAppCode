@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hips_1_Week_Progression__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+Hips_1_Week_Ago__c= null || Hips_1_Week_Ago__c= 0,
+NULL,
+IF(
+Hips__c &gt; Hips_1_Week_Ago__c,
+TEXT(ABS(Hips__c - Hips_1_Week_Ago__c)) &amp; &quot; In. or Mm. Increase&quot;,
+IF(
+Hips_1_Week_Ago__c&gt; Hips__c ,
+TEXT(ABS(Hips_1_Week_Ago__c- Hips__c )) &amp; &quot; In. or Mm. Decrease&quot;,
+&quot;No Change&quot;
+)
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Hips - Progress from Start of Week</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

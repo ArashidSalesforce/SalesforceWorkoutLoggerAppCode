@@ -1,0 +1,666 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Subscriptions",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"ec8cac3e-d43f-4e15-b6e6-d498ea015b0a\",\"columns\":[{\"UUID\":\"38db9bca-ed00-402c-b95a-6e9cfb2338b2\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "backgroundColor" : "",
+                "isLinkable" : false,
+                "linkAssistiveText" : "",
+                "paddingHorizontal" : "none",
+                "paddingVertical" : "small",
+                "text" : "My Subscriptions",
+                "textAlign" : "left",
+                "textDecoration" : "{\"bold\": true}",
+                "textDisplayInfo" : "{\"headingTag\": \"h2\", \"textStyle\": \"heading-medium\"}"
+              },
+              "definition" : "dxp_base:textBlock",
+              "id" : "b1405dc9-7483-4e19-aa13-f2ef02e0e62a",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "activeTabBorderHighlightWeight" : "2px",
+                "activeTabTextEmphasis" : "{\"bold\":true}",
+                "activeTabTextStyle" : "{\"textStyle\":\"paragraph1\",\"headingTag\":\"p\"}",
+                "borderColor" : "",
+                "borderRadius" : "0px",
+                "borderWeight" : "0px",
+                "enableOverflowMenu" : false,
+                "imageFit" : "cover",
+                "imagePosition" : "center center",
+                "overflowIconColor" : "rgb(116,116,116)",
+                "overflowIconStyle" : "down-arrow",
+                "overflowMenuLabel" : "More",
+                "tabAlignment" : "left",
+                "tabBorderColor" : "",
+                "tabBorderRadius" : "0px",
+                "tabBorderWeight" : "0px",
+                "tabHoverBorderHighlightWeight" : "1px",
+                "tabLayout" : "horizontal",
+                "tabPadding" : "12px",
+                "tabTextStyle" : "{\"textStyle\":\"paragraph1\",\"headingTag\":\"p\"}",
+                "tabsetConfig" : "{\"UUID\":\"f09db24e-46fa-4b2d-a6b0-f72061eccdd7\",\"activeTab\":null,\"useOverflowMenu\":null,\"tabs\":[{\"UUID\":\"a118fa56-e25a-4c5c-ac64-3335d0727a77\",\"tabName\":\"Active Subscriptions\",\"tabKey\":\"activeSubscriptions\",\"locked\":false,\"allowGuestUser\":false},{\"UUID\":\"f62cffed-42c5-4623-a815-c700815f603b\",\"tabName\":\"Past Subscriptions\",\"tabKey\":\"pastSubscriptions\",\"locked\":false,\"allowGuestUser\":false}]}",
+                "width" : "100%"
+              },
+              "children" : [ {
+                "children" : [ {
+                  "attributes" : { },
+                  "children" : [ {
+                    "children" : [ {
+                      "attributes" : {
+                        "backgroundColor" : "",
+                        "isLinkable" : false,
+                        "linkAssistiveText" : "",
+                        "paddingHorizontal" : "none",
+                        "paddingVertical" : "none",
+                        "text" : "You have no active subscriptions",
+                        "textAlign" : "center",
+                        "textDecoration" : "{\"bold\": true}",
+                        "textDisplayInfo" : "{\"textStyle\": \"heading-small\"}"
+                      },
+                      "definition" : "dxp_base:textBlock",
+                      "id" : "69b4b759-6536-45e0-9ef2-51ac73897e47",
+                      "type" : "component"
+                    }, {
+                      "attributes" : {
+                        "backgroundColor" : "",
+                        "isLinkable" : false,
+                        "linkAssistiveText" : "",
+                        "paddingHorizontal" : "none",
+                        "paddingVertical" : "none",
+                        "text" : "When you subscribe to a product, it shows here.",
+                        "textAlign" : "center",
+                        "textDecoration" : "{\"bold\": false}",
+                        "textDisplayInfo" : "{\"textStyle\": \"heading-small\"}"
+                      },
+                      "definition" : "dxp_base:textBlock",
+                      "id" : "4134fa70-134c-439f-a216-0f11fbb054ae",
+                      "type" : "component"
+                    }, {
+                      "attributes" : {
+                        "alignment" : "center",
+                        "size" : "standard",
+                        "stretch" : "standard",
+                        "text" : "Continue Shopping",
+                        "type" : "primary",
+                        "url" : "/"
+                      },
+                      "definition" : "dxp_base:button",
+                      "id" : "62d37373-5039-4040-ab72-c2a893ebae2b",
+                      "type" : "component"
+                    } ],
+                    "id" : "d4cf366e-3b8d-4aa1-8c47-577865fd6994",
+                    "name" : "emptyBodyForActiveSubscription",
+                    "title" : "emptyBodyForActiveSubscription",
+                    "type" : "region"
+                  }, {
+                    "children" : [ {
+                      "attributes" : {
+                        "backgroundColor" : "",
+                        "isLinkable" : false,
+                        "linkAssistiveText" : "",
+                        "paddingHorizontal" : "none",
+                        "paddingVertical" : "none",
+                        "text" : "You have no past subscriptions",
+                        "textAlign" : "center",
+                        "textDecoration" : "{\"bold\": true}",
+                        "textDisplayInfo" : "{\"textStyle\": \"heading-small\"}"
+                      },
+                      "definition" : "dxp_base:textBlock",
+                      "id" : "b7e168cf-267b-45d8-9fab-e89b45813b19",
+                      "type" : "component"
+                    }, {
+                      "attributes" : {
+                        "backgroundColor" : "",
+                        "isLinkable" : false,
+                        "linkAssistiveText" : "",
+                        "paddingHorizontal" : "none",
+                        "paddingVertical" : "none",
+                        "text" : "When a subscription ends or is canceled, it shows here.",
+                        "textAlign" : "center",
+                        "textDecoration" : "{\"bold\": false}",
+                        "textDisplayInfo" : "{\"textStyle\": \"heading-small\"}"
+                      },
+                      "definition" : "dxp_base:textBlock",
+                      "id" : "c0bae97f-605d-435a-9047-027bb9dd6fdf",
+                      "type" : "component"
+                    }, {
+                      "attributes" : {
+                        "alignment" : "center",
+                        "size" : "standard",
+                        "stretch" : "standard",
+                        "text" : "Continue Shopping",
+                        "type" : "primary",
+                        "url" : "/"
+                      },
+                      "definition" : "dxp_base:button",
+                      "id" : "d73583c2-3ace-4f6e-b6e9-c495cb9cf683",
+                      "type" : "component"
+                    } ],
+                    "id" : "c8264a36-b669-462a-99c4-7c17de9732f7",
+                    "name" : "emptyBodyForPastSubscription",
+                    "title" : "emptyBodyForPastSubscription",
+                    "type" : "region"
+                  }, {
+                    "children" : [ {
+                      "attributes" : {
+                        "autoScrollToMostRecent" : true,
+                        "backgroundColor" : "",
+                        "borderColor" : "",
+                        "borderRadius" : 0,
+                        "borderWidth" : 0,
+                        "isOrderReversed" : false,
+                        "itemSpacing" : "none",
+                        "listType" : "unformatted",
+                        "orderedMarkerAlignment" : "middle",
+                        "orderedMarkerColor" : "",
+                        "orderedMarkerSize" : "body-regular",
+                        "orderedMarkerStartValue" : 1,
+                        "orderedMarkerStyle" : "numbers",
+                        "showPagination" : true,
+                        "unorderedMarkerAlignment" : "middle",
+                        "unorderedMarkerColor" : "",
+                        "unorderedMarkerSize" : "body-regular",
+                        "unorderedMarkerStyle" : "filled-dots",
+                        "width" : 100
+                      },
+                      "children" : [ {
+                        "children" : [ {
+                          "attributes" : {
+                            "borderColor" : "#DDDDDD",
+                            "borderWeight" : 1,
+                            "showBorder" : true
+                          },
+                          "children" : [ {
+                            "children" : [ {
+                              "attributes" : {
+                                "alignment" : "center",
+                                "fit" : "contain",
+                                "height" : 350,
+                                "imageInfo" : "{\"imageInfoV1\":{\"url\":\"{!Subscription.product.image.url}\",\"altText\":\"\",\"contentKey\":\"\",\"contentType\":\"\"}}",
+                                "overlayColor" : "",
+                                "position" : "center center",
+                                "width" : 100
+                              },
+                              "definition" : "dxp_base:image",
+                              "id" : "de30392c-12d2-4443-b0ac-325c9f7a0f6a",
+                              "type" : "component"
+                            } ],
+                            "id" : "bceeaa34-0c48-473b-a648-e73ecda3ac54",
+                            "name" : "subscriptionProductImage",
+                            "title" : "subscriptionProductImage",
+                            "type" : "region"
+                          }, {
+                            "children" : [ {
+                              "attributes" : {
+                                "backgroundColor" : "",
+                                "isLinkable" : false,
+                                "linkAssistiveText" : "",
+                                "paddingHorizontal" : "none",
+                                "paddingVertical" : "none",
+                                "text" : "{!Subscription.product.name}",
+                                "textAlign" : "left",
+                                "textDecoration" : "{\"bold\": true}",
+                                "textDisplayInfo" : "{\"textStyle\": \"body-regular\"}"
+                              },
+                              "definition" : "dxp_base:textBlock",
+                              "id" : "f345b784-36c8-47c7-80b1-131881a3ac63",
+                              "type" : "component"
+                            } ],
+                            "id" : "2fc2cf6b-feb3-423a-bc3f-f7fe47e75983",
+                            "name" : "subscriptionProductName",
+                            "title" : "subscriptionProductName",
+                            "type" : "region"
+                          }, {
+                            "children" : [ {
+                              "attributes" : {
+                                "backgroundColor" : "",
+                                "isLinkable" : false,
+                                "linkAssistiveText" : "",
+                                "paddingHorizontal" : "none",
+                                "paddingVertical" : "none",
+                                "text" : "(qty {!Subscription.quantity})",
+                                "textAlign" : "left",
+                                "textDecoration" : "{\"bold\": false}",
+                                "textDisplayInfo" : "{\"textStyle\": \"body-regular\"}"
+                              },
+                              "definition" : "dxp_base:textBlock",
+                              "id" : "bf0cb16d-ebbb-478a-9c2c-88b607a45382",
+                              "type" : "component"
+                            } ],
+                            "id" : "369b369e-cafe-4f7c-b90d-c611f8ae2440",
+                            "name" : "subscriptionProductQuantity",
+                            "title" : "subscriptionProductQuantity",
+                            "type" : "region"
+                          }, {
+                            "children" : [ {
+                              "attributes" : {
+                                "item" : "{!Subscription}",
+                                "nextBillingDateLabel" : "Next Billing Date:",
+                                "paymentMethodLabel" : "Payment Method:",
+                                "priceTextDisplayInfo" : "body-regular",
+                                "showNextBillingDate" : true,
+                                "showPaymentMethod" : true,
+                                "showStartDate" : true,
+                                "showSubscriptionPeriod" : true,
+                                "startDateLabel" : "Start Date:",
+                                "subscriptionDetailPaddingVertical" : "none",
+                                "subscriptionDetailPillBorderRadius" : 4,
+                                "subscriptionDetailPillFontSize" : "small",
+                                "subscriptionDetailTextEmphasis" : "{}",
+                                "subscriptionPeriodLabel" : "Subscription Period:",
+                                "subscriptionPriceTextEmphasis" : "{\"bold\":true}",
+                                "subscriptionPricingPaddingVertical" : "none",
+                                "subscriptionTaxLabel" : "+tax",
+                                "subscriptionTaxTextEmphasis" : "{}",
+                                "taxTextDisplayInfo" : "body-regular",
+                                "textDisplayInfo" : "body-small"
+                              },
+                              "definition" : "commerce_builder:subscriptionInformation",
+                              "id" : "41272ade-f028-4480-9207-08202c86732b",
+                              "type" : "component"
+                            } ],
+                            "id" : "2c0a59a3-a1c7-4b96-9230-768edecae37a",
+                            "name" : "subscriptionInformation",
+                            "title" : "subscriptionInformation",
+                            "type" : "region"
+                          } ],
+                          "definition" : "commerce_builder:subscriptionItem",
+                          "id" : "ce235fc2-9149-4387-966d-c0d75b30a5f9",
+                          "type" : "component"
+                        } ],
+                        "id" : "013ee660-9142-47b3-bc54-d4d1fcba8637",
+                        "name" : "sfdcRepeaterItem",
+                        "title" : "sfdcRepeaterItem",
+                        "type" : "region"
+                      }, {
+                        "children" : [ {
+                          "attributes" : {
+                            "paginatorAttributes" : "{\"nested\":{\"componentName\":\"dxp_content_layout:paginatorShowMore\",\"attributes\":{\"label\":\"Show More\",\"textDecoration\":\"{}\",\"buttonStyle\":\"secondary\",\"size\":\"standard\",\"width\":\"standard\",\"verticalPadding\":\"none\",\"horizontalAlignment\":\"center\"}}}",
+                            "variant" : "showmore"
+                          },
+                          "children" : [ {
+                            "children" : [ {
+                              "attributes" : { },
+                              "definition" : "dxp_page_layout:placeHolder",
+                              "id" : "9f3a2500-126e-47cf-9b01-ff3f1f6bb80b",
+                              "type" : "component"
+                            } ],
+                            "id" : "b4a7fd0f-4218-4f9d-9094-771c4f6882dc",
+                            "name" : "placeholder",
+                            "title" : "placeholder",
+                            "type" : "region"
+                          } ],
+                          "definition" : "dxp_content_layout:paginator2",
+                          "id" : "7c4aef69-530f-44b2-ba35-157c227cc8d8",
+                          "type" : "component"
+                        } ],
+                        "id" : "6fa03443-56ca-4c5b-a262-0a95719b9b2b",
+                        "name" : "pagination",
+                        "title" : "pagination",
+                        "type" : "region"
+                      } ],
+                      "definition" : "dxp_content_layout:list",
+                      "id" : "5a79a0a5-95ce-42cb-93bc-3370006e7a76",
+                      "type" : "component",
+                      "dataProviders" : [ {
+                        "definition" : "sfdc_cms__commerceSubscriptionsDataProvider",
+                        "sfdcExpressionKey" : "Subscription",
+                        "attributes" : {
+                          "subscriptionState" : "Active"
+                        }
+                      } ]
+                    } ],
+                    "id" : "03e46e12-3fdc-428c-b413-180339cffbfa",
+                    "name" : "subscriptionsRepeater",
+                    "title" : "subscriptionsRepeater",
+                    "type" : "region"
+                  } ],
+                  "definition" : "commerce_builder:subscriptions",
+                  "id" : "c6301b92-9774-4554-bbfe-c9014c63a3d9",
+                  "type" : "component"
+                } ],
+                "id" : "a118fa56-e25a-4c5c-ac64-3335d0727a77",
+                "name" : "activeSubscriptions",
+                "title" : "activeSubscriptions",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : { },
+                  "children" : [ {
+                    "children" : [ {
+                      "attributes" : {
+                        "backgroundColor" : "",
+                        "isLinkable" : false,
+                        "linkAssistiveText" : "",
+                        "paddingHorizontal" : "none",
+                        "paddingVertical" : "none",
+                        "text" : "You have no active subscriptions",
+                        "textAlign" : "center",
+                        "textDecoration" : "{\"bold\": true}",
+                        "textDisplayInfo" : "{\"textStyle\": \"heading-small\"}"
+                      },
+                      "definition" : "dxp_base:textBlock",
+                      "id" : "d1c56d45-31c3-47f5-9024-bc06f5344b65",
+                      "type" : "component"
+                    }, {
+                      "attributes" : {
+                        "backgroundColor" : "",
+                        "isLinkable" : false,
+                        "linkAssistiveText" : "",
+                        "paddingHorizontal" : "none",
+                        "paddingVertical" : "none",
+                        "text" : "When you subscribe to a product, it shows here.",
+                        "textAlign" : "center",
+                        "textDecoration" : "{\"bold\": false}",
+                        "textDisplayInfo" : "{\"textStyle\": \"heading-small\"}"
+                      },
+                      "definition" : "dxp_base:textBlock",
+                      "id" : "1f07981a-d179-4a6e-898c-cc106e286a53",
+                      "type" : "component"
+                    }, {
+                      "attributes" : {
+                        "alignment" : "center",
+                        "size" : "standard",
+                        "stretch" : "standard",
+                        "text" : "Continue Shopping",
+                        "type" : "primary",
+                        "url" : "/"
+                      },
+                      "definition" : "dxp_base:button",
+                      "id" : "52bf3fa7-c01f-4c57-9e51-0473737e1086",
+                      "type" : "component"
+                    } ],
+                    "id" : "fe660541-a6d6-48b7-b11a-3cfafd462946",
+                    "name" : "emptyBodyForActiveSubscription",
+                    "title" : "emptyBodyForActiveSubscription",
+                    "type" : "region"
+                  }, {
+                    "children" : [ {
+                      "attributes" : {
+                        "backgroundColor" : "",
+                        "isLinkable" : false,
+                        "linkAssistiveText" : "",
+                        "paddingHorizontal" : "none",
+                        "paddingVertical" : "none",
+                        "text" : "You have no past subscriptions",
+                        "textAlign" : "center",
+                        "textDecoration" : "{\"bold\": true}",
+                        "textDisplayInfo" : "{\"textStyle\": \"heading-small\"}"
+                      },
+                      "definition" : "dxp_base:textBlock",
+                      "id" : "dc17d51c-e1cc-4e83-8771-d16e1a867a90",
+                      "type" : "component"
+                    }, {
+                      "attributes" : {
+                        "backgroundColor" : "",
+                        "isLinkable" : false,
+                        "linkAssistiveText" : "",
+                        "paddingHorizontal" : "none",
+                        "paddingVertical" : "none",
+                        "text" : "When a subscription ends or is canceled, it shows here.",
+                        "textAlign" : "center",
+                        "textDecoration" : "{\"bold\": false}",
+                        "textDisplayInfo" : "{\"textStyle\": \"heading-small\"}"
+                      },
+                      "definition" : "dxp_base:textBlock",
+                      "id" : "41e89eb6-916a-4a4c-b8cb-ae9aa0bef970",
+                      "type" : "component"
+                    }, {
+                      "attributes" : {
+                        "alignment" : "center",
+                        "size" : "standard",
+                        "stretch" : "standard",
+                        "text" : "Continue Shopping",
+                        "type" : "primary",
+                        "url" : "/"
+                      },
+                      "definition" : "dxp_base:button",
+                      "id" : "38b2161f-34f1-4a43-8b66-40138b820bb1",
+                      "type" : "component"
+                    } ],
+                    "id" : "96bf325a-fcf5-42de-b289-69f25a88bb3e",
+                    "name" : "emptyBodyForPastSubscription",
+                    "title" : "emptyBodyForPastSubscription",
+                    "type" : "region"
+                  }, {
+                    "children" : [ {
+                      "attributes" : {
+                        "autoScrollToMostRecent" : true,
+                        "backgroundColor" : "",
+                        "borderColor" : "",
+                        "borderRadius" : 0,
+                        "borderWidth" : 0,
+                        "isOrderReversed" : false,
+                        "itemSpacing" : "none",
+                        "listType" : "unformatted",
+                        "orderedMarkerAlignment" : "middle",
+                        "orderedMarkerColor" : "",
+                        "orderedMarkerSize" : "body-regular",
+                        "orderedMarkerStartValue" : 1,
+                        "orderedMarkerStyle" : "numbers",
+                        "showPagination" : true,
+                        "unorderedMarkerAlignment" : "middle",
+                        "unorderedMarkerColor" : "",
+                        "unorderedMarkerSize" : "body-regular",
+                        "unorderedMarkerStyle" : "filled-dots",
+                        "width" : 100
+                      },
+                      "children" : [ {
+                        "children" : [ {
+                          "attributes" : {
+                            "borderColor" : "#DDDDDD",
+                            "borderWeight" : 1,
+                            "showBorder" : true
+                          },
+                          "children" : [ {
+                            "children" : [ {
+                              "attributes" : {
+                                "alignment" : "center",
+                                "fit" : "contain",
+                                "height" : 350,
+                                "imageInfo" : "{\"imageInfoV1\":{\"url\":\"{!Subscription.product.image.url}\",\"altText\":\"\",\"contentKey\":\"\",\"contentType\":\"\"}}",
+                                "overlayColor" : "",
+                                "position" : "center center",
+                                "width" : 100
+                              },
+                              "definition" : "dxp_base:image",
+                              "id" : "28fe872a-9c47-412f-a845-68ca2815f59a",
+                              "type" : "component"
+                            } ],
+                            "id" : "4cc92dfc-9d0d-41c5-8436-fe705568ad9e",
+                            "name" : "subscriptionProductImage",
+                            "title" : "subscriptionProductImage",
+                            "type" : "region"
+                          }, {
+                            "children" : [ {
+                              "attributes" : {
+                                "backgroundColor" : "",
+                                "isLinkable" : false,
+                                "linkAssistiveText" : "",
+                                "paddingHorizontal" : "none",
+                                "paddingVertical" : "none",
+                                "text" : "{!Subscription.product.name}",
+                                "textAlign" : "left",
+                                "textDecoration" : "{\"bold\": true}",
+                                "textDisplayInfo" : "{\"textStyle\": \"body-regular\"}"
+                              },
+                              "definition" : "dxp_base:textBlock",
+                              "id" : "706d8fec-53b8-49ec-b411-75b0d81f2ef0",
+                              "type" : "component"
+                            } ],
+                            "id" : "c1b540d7-d64a-41ec-807e-5ea6c916b2fc",
+                            "name" : "subscriptionProductName",
+                            "title" : "subscriptionProductName",
+                            "type" : "region"
+                          }, {
+                            "children" : [ {
+                              "attributes" : {
+                                "backgroundColor" : "",
+                                "isLinkable" : false,
+                                "linkAssistiveText" : "",
+                                "paddingHorizontal" : "none",
+                                "paddingVertical" : "none",
+                                "text" : "(qty {!Subscription.quantity})",
+                                "textAlign" : "left",
+                                "textDecoration" : "{\"bold\": false}",
+                                "textDisplayInfo" : "{\"textStyle\": \"body-regular\"}"
+                              },
+                              "definition" : "dxp_base:textBlock",
+                              "id" : "a31ff0f8-4f8f-4366-bb20-fa09802fda65",
+                              "type" : "component"
+                            } ],
+                            "id" : "ed70c43f-4d45-4573-8b94-76606da06db0",
+                            "name" : "subscriptionProductQuantity",
+                            "title" : "subscriptionProductQuantity",
+                            "type" : "region"
+                          }, {
+                            "children" : [ {
+                              "attributes" : {
+                                "item" : "{!Subscription}",
+                                "nextBillingDateLabel" : "Next Billing Date:",
+                                "paymentMethodLabel" : "Payment Method:",
+                                "priceTextDisplayInfo" : "body-regular",
+                                "showNextBillingDate" : true,
+                                "showPaymentMethod" : true,
+                                "showStartDate" : true,
+                                "showSubscriptionPeriod" : true,
+                                "startDateLabel" : "Start Date:",
+                                "subscriptionDetailPaddingVertical" : "none",
+                                "subscriptionDetailPillBorderRadius" : 4,
+                                "subscriptionDetailPillFontSize" : "small",
+                                "subscriptionDetailTextEmphasis" : "{}",
+                                "subscriptionPeriodLabel" : "Subscription Period:",
+                                "subscriptionPriceTextEmphasis" : "{\"bold\":true}",
+                                "subscriptionPricingPaddingVertical" : "none",
+                                "subscriptionTaxLabel" : "+tax",
+                                "subscriptionTaxTextEmphasis" : "{}",
+                                "taxTextDisplayInfo" : "body-regular",
+                                "textDisplayInfo" : "body-small"
+                              },
+                              "definition" : "commerce_builder:subscriptionInformation",
+                              "id" : "bc2a93e6-ba68-4864-859c-9ab773ec43b8",
+                              "type" : "component"
+                            } ],
+                            "id" : "06a412f5-85a0-4aa6-8e12-b28b5b193d98",
+                            "name" : "subscriptionInformation",
+                            "title" : "subscriptionInformation",
+                            "type" : "region"
+                          } ],
+                          "definition" : "commerce_builder:subscriptionItem",
+                          "id" : "1d64fb2f-d9af-42b8-b62e-0a49132f970a",
+                          "type" : "component"
+                        } ],
+                        "id" : "ddf2317c-bf17-4c94-b39f-cbbcfbaf377b",
+                        "name" : "sfdcRepeaterItem",
+                        "title" : "sfdcRepeaterItem",
+                        "type" : "region"
+                      }, {
+                        "children" : [ {
+                          "attributes" : {
+                            "paginatorAttributes" : "{\"nested\":{\"componentName\":\"dxp_content_layout:paginatorShowMore\",\"attributes\":{\"label\":\"Show More\",\"textDecoration\":\"{}\",\"buttonStyle\":\"secondary\",\"size\":\"standard\",\"width\":\"standard\",\"verticalPadding\":\"none\",\"horizontalAlignment\":\"center\"}}}",
+                            "variant" : "showmore"
+                          },
+                          "children" : [ {
+                            "children" : [ {
+                              "attributes" : { },
+                              "definition" : "dxp_page_layout:placeHolder",
+                              "id" : "e9096ec6-4826-42a6-989a-684c077dee71",
+                              "type" : "component"
+                            } ],
+                            "id" : "4f7f4536-65e2-4eb4-8488-e76788831c90",
+                            "name" : "placeholder",
+                            "title" : "placeholder",
+                            "type" : "region"
+                          } ],
+                          "definition" : "dxp_content_layout:paginator2",
+                          "id" : "d0c49dcd-39c7-48d7-b0d8-3ac70f7cb32c",
+                          "type" : "component"
+                        } ],
+                        "id" : "07157fde-7c49-4cb9-bdee-c113f2d5e5cc",
+                        "name" : "pagination",
+                        "title" : "pagination",
+                        "type" : "region"
+                      } ],
+                      "definition" : "dxp_content_layout:list",
+                      "id" : "9455e8be-7553-407d-a804-2513006ee4a1",
+                      "type" : "component",
+                      "dataProviders" : [ {
+                        "definition" : "sfdc_cms__commerceSubscriptionsDataProvider",
+                        "sfdcExpressionKey" : "Subscription",
+                        "attributes" : {
+                          "subscriptionState" : "Past"
+                        }
+                      } ]
+                    } ],
+                    "id" : "80b8a9ce-ab2e-4151-a22f-a98d8ebe1b28",
+                    "name" : "subscriptionsRepeater",
+                    "title" : "subscriptionsRepeater",
+                    "type" : "region"
+                  } ],
+                  "definition" : "commerce_builder:subscriptions",
+                  "id" : "02f4b6c1-2873-436d-802f-c92d0374cc80",
+                  "type" : "component"
+                } ],
+                "id" : "f62cffed-42c5-4623-a815-c700815f603b",
+                "name" : "pastSubscriptions",
+                "title" : "pastSubscriptions",
+                "type" : "region"
+              } ],
+              "definition" : "dxp_layout:tabs",
+              "id" : "f09db24e-46fa-4b2d-a6b0-f72061eccdd7",
+              "type" : "component"
+            } ],
+            "id" : "38db9bca-ed00-402c-b95a-6e9cfb2338b2",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "ec8cac3e-d43f-4e15-b6e6-d498ea015b0a",
+          "type" : "component"
+        } ],
+        "id" : "9e791357-815e-4c88-9d31-39144130808b",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "757df79d-e0ce-4e03-836b-44b49558240e",
+          "type" : "component"
+        } ],
+        "id" : "46b998f4-cfee-4245-a3c1-b4394bfe2169",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "289841f8-1906-4022-910a-6e69bc81372b",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "MyAccount",
+    "viewType" : "subscriptions"
+  }
+}

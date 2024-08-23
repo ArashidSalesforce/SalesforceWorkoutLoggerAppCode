@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Waist_1_Week_Progression__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+    Waist_7_Days_Ago__c = null  || Waist_7_Days_Ago__c = 0,
+    NULL,
+    IF(
+        Waist__c &gt; Waist_7_Days_Ago__c,
+        TEXT(ABS(Waist__c - Waist_7_Days_Ago__c)) &amp; &quot; In. or Mm. Increase&quot;,
+        IF(
+            Waist_7_Days_Ago__c &gt; Waist__c,
+            TEXT(ABS(Waist_7_Days_Ago__c - Waist__c)) &amp; &quot; In. or Mm. Decrease&quot;,
+            &quot;No Change&quot;
+        )
+    )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Waist - Progress from Start of Week</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

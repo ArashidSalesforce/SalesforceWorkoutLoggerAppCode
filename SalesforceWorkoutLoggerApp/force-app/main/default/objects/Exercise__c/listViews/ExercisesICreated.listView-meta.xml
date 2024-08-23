@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ExercisesICreated</fullName>
+    <columns>NAME</columns>
+    <columns>Primary_Bodypart_Worked__c</columns>
+    <columns>Push_Pull_Legs__c</columns>
+    <filterScope>Mine</filterScope>
+    <label>Exercises I Created</label>
+</ListView>

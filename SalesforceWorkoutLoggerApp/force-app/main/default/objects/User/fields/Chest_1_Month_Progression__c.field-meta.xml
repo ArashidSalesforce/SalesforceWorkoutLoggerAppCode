@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Chest_1_Month_Progression__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+Chest_1_Month_Ago__c= null || Chest_1_Month_Ago__c= 0,
+NULL,
+IF(
+Chest__c&gt; Chest_1_Month_Ago__c,
+TEXT(ABS(Chest__c- Chest_1_Month_Ago__c)) &amp; &quot; In. or Mm. Increase&quot;,
+IF(
+Chest_1_Month_Ago__c&gt; Chest__c,
+TEXT(ABS(Chest_1_Month_Ago__c- Chest__c)) &amp; &quot; In. or Mm. Decrease&quot;,
+&quot;No Change&quot;
+)
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Chest - Progress from 1st of Month</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

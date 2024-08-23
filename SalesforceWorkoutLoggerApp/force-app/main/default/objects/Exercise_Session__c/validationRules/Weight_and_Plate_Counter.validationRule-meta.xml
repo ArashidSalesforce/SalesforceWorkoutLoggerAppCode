@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Weight_and_Plate_Counter</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(
+    NOT(ISBLANK(Weight__c)),
+    OR(
+        NOT(ISBLANK(Large_Plate_Value__c)),
+        NOT(ISBLANK(Large_Plates_Count__c)),
+        NOT(ISBLANK(Medium_Plate_Value__c)),
+        NOT(ISBLANK(Medium_Plates_Count__c)),
+        NOT(ISBLANK(Small_Plate_Value__c)),
+        NOT(ISBLANK(Small_Plates_Count__c)),
+        NOT(ISBLANK(Very_Small_Plates_Count__c)),
+        NOT(ISBLANK(Very_Small_Plates_Value__c))
+    )
+)</errorConditionFormula>
+    <errorMessage>&apos;Weight&apos; and &apos;Plate Count&apos; and can&apos;t be populated at the same time</errorMessage>
+</ValidationRule>

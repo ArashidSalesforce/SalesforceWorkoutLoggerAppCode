@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Bodypart_Worked__c</fullName>
+    <label>Primary Bodypart Worked</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Biceps</fullName>
+                <default>false</default>
+                <label>Biceps</label>
+            </value>
+            <value>
+                <fullName>Calves</fullName>
+                <default>false</default>
+                <label>Calves</label>
+            </value>
+            <value>
+                <fullName>Chest</fullName>
+                <default>false</default>
+                <label>Chest</label>
+            </value>
+            <value>
+                <fullName>Core</fullName>
+                <default>false</default>
+                <label>Core</label>
+            </value>
+            <value>
+                <fullName>Forearms</fullName>
+                <default>false</default>
+                <label>Forearms</label>
+            </value>
+            <value>
+                <fullName>Hamstrings</fullName>
+                <default>false</default>
+                <label>Hamstrings</label>
+            </value>
+            <value>
+                <fullName>Lats</fullName>
+                <default>false</default>
+                <label>Lats</label>
+            </value>
+            <value>
+                <fullName>Lower Back</fullName>
+                <default>false</default>
+                <label>Lower Back</label>
+            </value>
+            <value>
+                <fullName>Middle Back</fullName>
+                <default>false</default>
+                <label>Middle Back</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Quads</fullName>
+                <default>false</default>
+                <label>Quads</label>
+            </value>
+            <value>
+                <fullName>Shoulders</fullName>
+                <default>false</default>
+                <label>Shoulders</label>
+            </value>
+            <value>
+                <fullName>Traps</fullName>
+                <default>false</default>
+                <label>Traps</label>
+            </value>
+            <value>
+                <fullName>Triceps</fullName>
+                <default>false</default>
+                <label>Triceps</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

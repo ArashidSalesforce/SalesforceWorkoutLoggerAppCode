@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Workout Tracker</label>
+    <navType>Console</navType>
+    <tabs>standard-MobileHome</tabs>
+    <tabs>X1_Rep_Max_Calculator</tabs>
+    <tabs>Workout__c</tabs>
+    <tabs>Exercise__c</tabs>
+    <tabs>Volume</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Workout_Tracker_UtilityBar</utilityBar>
+    <workspaceConfig>
+        <mappings>
+            <tab>Exercise__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Volume</tab>
+        </mappings>
+        <mappings>
+            <tab>Workout__c</tab>
+        </mappings>
+        <mappings>
+            <tab>X1_Rep_Max_Calculator</tab>
+        </mappings>
+        <mappings>
+            <tab>standard-MobileHome</tab>
+        </mappings>
+    </workspaceConfig>
+</CustomApplication>
