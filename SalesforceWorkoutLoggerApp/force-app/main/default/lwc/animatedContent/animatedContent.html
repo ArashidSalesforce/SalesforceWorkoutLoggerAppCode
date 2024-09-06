@@ -1,0 +1,29 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 08-23-2024
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <div class="enchanted-dashboard">
+        <h1 class="dashboard-title">Enchanted Opportunity Dashboard</h1>
+        <div class="dashboard-content">
+            <div class="top-opportunities">
+                <h2>Top 5 Magical Opportunities</h2>
+                <template for:each={topOpportunities} for:item="opp">
+                    <div key={opp.Id} class="opp-card">
+                        <p class="opp-name">{opp.Name}</p>
+                        <p class="opp-amount">{opp.Amount}</p>
+                        <p class="opp-stage">{opp.StageName}</p>
+                        <div class="magic-sparkle"></div>
+                    </div>
+                </template>
+            </div>
+            <div class="stage-chart">
+                <h2>Opportunity Stage Enchantment</h2>
+                <canvas class="chart-canvas" lwc:dom="manual"></canvas>
+            </div>
+        </div>
+    </div>
+</template>
